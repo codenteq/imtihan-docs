@@ -1,9 +1,8 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
 tagline:
 actionText: Quick Start →
-actionLink: /guide/
+actionLink: /introduction/
 features:
   - title: Package creation
     details: Learn how to create a new package for Imtihan.
@@ -11,5 +10,5 @@ features:
     details: Learn how to create or customize a theme for Bagisto.
   - title: API documentation
     details: Learn how to connect your existing systems with the Imtihan API.
-footer: Made by  with ❤️
+footer: © 2023 İmtihan ❤️
 ---

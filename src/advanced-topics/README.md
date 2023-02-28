@@ -2,10 +2,10 @@
 
 In this section, we will discuss advanced topics of eExam such as creating payment methods, question methods, data grids, and more. Before diving into this, we assume you are familiar with Laravel.
 
-# Minio
-## MinIO High Performance Object Storage
+## Minio
+### MinIO High Performance Object Storage
 MinIO is a high performance object storage solution that provides an Amazon Web Services S3-compatible API and supports all core S3 features. MinIO is built to deploy anywhere - public or private cloud, baremetal infrastructure, orchestrated environments, and edge infrastructure.
-## Setup and installation
+### Setup and installation
 ### Cloud
 To use the [MinIO](https://min.io/) cloud base, you can register and follow the documents.
 ### Docker
@@ -23,9 +23,9 @@ MINIO_REGION=us-east-1
 MINIO_BUCKET=imtihan
 ```
 
-# Meilisearch
+## Meilisearch
 It will walk you through installing Meilisearch, adding documents, performing your first search, using the search preview, and protecting your cloud server.
-## Setup and installation
+### Setup and installation
 ### Cloud
 To use the [Meilisearch](https://www.meilisearch.com/) cloud base, you can register and follow the documents.
 ### Docker

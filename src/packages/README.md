@@ -44,13 +44,14 @@ You can find a basic tree-structure of the package below:
     - ExampleTest.php
 ```
 
-# Create a new package
+## Create a new package
 
+## Back-end
 There are two ways to create a package.
 1. By using Laravel Artisan Commands (**Recommended**)
 1. By manually setting up all files (**Expert Level**)
 
-## 1. By using Laravel Artisan Commands
+### 1. By using Laravel Artisan Commands
 ### Method 1
 With the package builder you can build the entire architecture in one command.
 ```bash
@@ -123,7 +124,7 @@ use RefreshDatabase;
 protected string $apiUrl = '/api/';
 ```
 
-## 2. By manually setting up all files
+### 2. By manually setting up all files
 By manually setting up package, we assume that you are familiar with packages directory structures and flow. If not then you can find a basic tree structure of package below,
 <details>
   </br>
@@ -155,6 +156,29 @@ By manually setting up package, we assume that you are familiar with packages di
     - ExampleTest.php
   - Unit/
     - ExampleTest.php
+```
+
+</details>
+
+## Front-end
+
+### By manually setting up all files
+By manually setting up package, we assume that you are familiar with packages directory structures and flow. If not then you can find a basic tree structure of package below,
+<details>
+  </br>
+
+  ```bash
+- src/
+    - components/
+        - example/
+            - example.js
+    - pages/
+      - example/
+        - [id]
+          - edit.js
+          - view.js
+      - index.js
+      - create.js        
 ```
 
 </details>
