@@ -1,6 +1,6 @@
-# API Resources
+# RESTful API
 
-İmtihan API Resources is a medium to use the features of the core İmtihan System. By using İmtihan API Resources, you can integrate your application to serve the default content of İmtihan.
+İmtihan RESTful API is a medium to use the features of the core İmtihan System. By using İmtihan RESTful API, you can integrate your application to serve the default content of İmtihan.
 
 ## Key Features
 - İmtihan APIs supports REST (Representational State Transfer).
@@ -9,7 +9,7 @@
 - Also Provide the option to filter the responses based on attribute fields.
 - The Framework supports the pagination which helps to increase the performance of application.
 
-## Where can I use İmtihan API Resources?
+## Where can I use İmtihan RESTful API?
 We can use the İmtihan APIs in different areas. Some of them are:
 
 - To build a PWA (Progressive Web Application) application, which uses modern web capabilities to deliver an application like experience to the users and provide more user friendly experience than a web application.
