@@ -10,7 +10,7 @@ MinIO is a high performance object storage solution that provides an Amazon Web 
 To use the [MinIO](https://min.io/) cloud base, you can register and follow the documents.
 ### Docker
 If you're using Docker, you won't need to use the cloud. Instead, start the project using the command line and run it to `localhost:9000`.
-```bash
+```sh
 ./vendor/bin/sail up
 ```
 Configure MinIO in .env:
@@ -30,7 +30,7 @@ It will walk you through installing Meilisearch, adding documents, performing yo
 To use the [Meilisearch](https://www.meilisearch.com/) cloud base, you can register and follow the documents.
 ### Docker
 If you're using Docker, you won't need to use the cloud. Instead, start the project using the command line and run it to `localhost:7700`.
-```bash
+```sh
 ./vendor/bin/sail up
 ```
 Configure Meilisearch in .env:
@@ -42,11 +42,11 @@ SCOUT_QUEUE=true
 ```
 ## Batch Import
 If you are installing Scout into an existing project, you may already have database records you need to import into your indexes. Scout provides a `scout:import` Artisan command that you may use to import all of your existing records into your search indexes:
-```bash
+```sh
 sail artisan scout:import "App\Models\Name"
 ```
 The `flush` command may be used to remove all of a model's records from your search indexes:
-```bash
+```sh
 sail artisan scout:flush "App\Models\Name"
 ```
 
@@ -54,13 +54,13 @@ sail artisan scout:flush "App\Models\Name"
 While not strictly required to use Scout, you should strongly consider configuring a [queue driver](https://laravel.com/docs/10.x/queues) before using the library. Running a queue worker will allow Scout to queue all operations that sync your model information to your search indexes, providing much better response times for your application's web interface.
 
 Once you have configured a `queue` driver, set the value of the queue option in your `config/scout.php` configuration file to `true`:
-```bash
+```php
 'queue' => true,
 ```
 Even when the `queue` option is set to `false`, it's important to remember that some Scout drivers like Algolia and Meilisearch always index records asynchronously. Meaning, even though the index operation has completed within your Laravel application, the search engine itself may not reflect the new and updated records immediately.
 
 To specify the connection and queue that your Scout jobs utilize, you may define the `queue` configuration option as an array:
-```bash
+```php
 'queue' => [
     'connection' => 'redis',
     'queue' => 'scout'

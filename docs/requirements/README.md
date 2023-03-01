@@ -15,7 +15,9 @@ Open your php configuration file php.ini and change the following settings.
 * `memory_limit = 2G`
 * `max_execution_time = 360`
 * `date.timezone = Europe/Istanbul <- Change this to your own timezone.`
-> **Restart your web server**<br>
-> Whenever you make changes to the PHP configuration file, you must restart Apache or NGINX.
-Supported Database Servers
+
+::: warning
+Whenever you make changes to the PHP configuration file, you must restart Apache or NGINX. Supported Database Servers
+:::
+
 * MySQL: 8.0.30 or higher
