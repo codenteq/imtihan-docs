@@ -1,21 +1,21 @@
 # Installation
 
 ## Back-End Install
-```bash
+```sh
 composer create-project codenteq/imtihan
 ```
 
-```bash
+```sh
 cd backend && composer install && yarn install
 ```
 
-```bash
+```sh
 cp .env.example .env
 ```
 
-> **WARNING**
->
-> It will check existence of the .env file, if it exists then please update the file manually with the below details.
+::: warning
+It will check existence of the .env file, if it exists then please update the file manually with the below details.
+:::
 
 ```bash
     DB_CONNECTION=mysql
@@ -25,10 +25,12 @@ cp .env.example .env
     DB_USERNAME=root
     DB_PASSWORD=
 ```
-> **WARNING**
->
-> If the .env file does not exists then it will ask to provide the details on command prompts.
-```bash
+
+::: warning
+It will check existence of the .env file, if it exists then please update the file manually with the below details.
+:::
+
+```sh
 php artisan migrate --seed
 ```
 ### Start Using Imtihan
@@ -37,7 +39,7 @@ php artisan migrate --seed
 * `http://example.com`
 
 ### On your local device
-```bash
+```sh
 php artisan serve or sail up
 ```
 
@@ -46,22 +48,23 @@ Go to `https://localhost:8000`
 
 ## Front-End Install
 
-```bash
+```sh
 composer create-project codenteq/imtihan
 ```
 
-```bash
+```sh
 cd frontend && yarn install && yarn dev
 ```
 
-```bash
+```sh
 cp .env.example .env
 ```
 
 ### Configuration
-> **WARNING**
->
-> If the .env file does not exists then it will ask to provide the details on command prompts.
+
+::: warning
+If the .env file does not exists then it will ask to provide the details on command prompts.
+:::
 
 ```bash
     NEXT_PUBLIC_BACKEND_URL=http://localhost:8000
@@ -75,6 +78,6 @@ cp .env.example .env
 * `http://example.com`
 * `http://example.com/login`
 
-> **WARNING**
->
-> If you used the `--seed` command in the back-end, you've created an automatic user! The user's password is set to `password`!
+::: warning
+If you used the `--seed` command in the back-end, you've created an automatic user! The user's password is set to `password`!
+:::

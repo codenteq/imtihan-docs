@@ -18,7 +18,7 @@ Before you can launch eExam in a docker environment you need to install the late
 Once Docker and docker-compose have been installed, we need to create a docker-compose.yml file.
 The docker-compose.yml configuration file requires following inputs from the user:
 
-```bash
+```yml
 # For more information: https://laravel.com/docs/sail
 version: '3'
 services:
@@ -108,16 +108,18 @@ volumes:
         driver: local
 ```
 
-```bash
+```sh
 composer -V
 ```
-```bash
+```sh
 Composer version 2.4.0 2022-08-16 16:10:48
 ```
-> ### Docker Image
-> Composer is published as Docker container in a few places, see the list in the [composer/docker README](https://github.com/composer/docker).
-> Example usage:
-```bash
+
+::: tip
+Docker Image: Composer is published as Docker container in a few places, see the list in the [composer/docker README](https://github.com/composer/docker). Example usage:
+:::
+
+```sh
 docker pull composer/composer
 docker run --rm -it -v "$(pwd):/app" composer/composer install
 ```
@@ -125,11 +127,11 @@ docker run --rm -it -v "$(pwd):/app" composer/composer install
 ## Launching the docker container
 The following command will create a network, launch a webserver and database containers with names apache2 and mysql. It will also create a new app and dbvolume directory inside your current directory and mount it to respective docker containers as mentioned in docker-compose.yml. It binds your host port 80 with the apache2 container port 80 and host port 3306 with mysql container port 3306. If you want to run containers on ports other than 80 and 3306, modify their values in docker-compose.yml file.
 
-```bash
+```sh
 docker-compose up -d
 ```
 
-```bash
+```sh
 sail up -d
 ```
 
@@ -137,7 +139,7 @@ sail up -d
 Check your running docker containers with the following commands
 
 `docker ps` OR `docker-compose ps`
-```bash
+```sh
 CONTAINER ID   IMAGE                    COMMAND                  CREATED       STATUS                 PORTS                                                  NAMES
 0925137cbadf   sail-8.1/app             "start-container"        4 hours ago   Up 4 hours             0.0.0.0:80->80/tcp, 0.0.0.0:5173->5173/tcp, 8000/tcp   backend-laravel.test-1
 e7f3ba153a79   mysql/mysql-server:8.0   "/entrypoint.sh mysq…"   4 hours ago   Up 4 hours (healthy)   0.0.0.0:3306->3306/tcp, 33060-33061/tcp                backend-mysql-1

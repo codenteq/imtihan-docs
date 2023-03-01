@@ -7,19 +7,19 @@ In addition, you may create a `.env.testing` file in the root of your project. T
 
 ## Running Tests
 As mentioned previously, once you've written tests, you may run them using `phpunit`:
-```bash
+```sh
 ./vendor/bin/phpunit
 ```
 In addition to the `phpunit` command, you may use the `test` Artisan command to run your tests. The Artisan test runner provides verbose test reports in order to ease development and debugging:
-```bash
+```sh
 php artisan test
 ```
 ### Filter
 It is possible to filter instead of running the tests from scratch every time, for this follow the `--filter` command
-```bash
+```sh
 php artisan test --filter=ExampleTestController
 ```
 It is possible to run a single function inside the filter
-```bash
+```sh
 php artisan test --filter=ExampleTestController::function_name
 ```
