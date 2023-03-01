@@ -1,28 +1,18 @@
-name: Deploy to GitHub pages
-on:
-    push:
-        branches:
-            - master
+name: Build and Deploy
+on: [push]
 jobs:
-    publish-docs:
-        runs-on: ubuntu-latest
-        steps:
-            # https://github.com/actions/checkout
-            - name: Checkout 🛎️
-              uses: actions/checkout@v2
-              with:
-                  persist-credentials: false
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
 
-            - name: NPM install 📦
-              uses: bahmutov/npm-install@v1
-
-            - name: Build docs 🏗
-              run: npm run build
-
-            # https://github.com/marketplace/actions/github-pages-action
-            - name: Deploy 🚀
-              uses: peaceiris/actions-gh-pages@v3
-              with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: ./docs/.vuepress/dist
-                  cname: codenteq.github.io
+      - name: vuepress-deploy
+        uses: jenkey2011/vuepress-deploy@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_REPO: codenteq/imtihan-docs
+          TARGET_BRANCH: master
+          BUILD_SCRIPT: yarn && yarn build
+          BUILD_DIR: docs/.vuepress/dist
+          CNAME: codenteq.github.io
