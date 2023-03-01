@@ -11,10 +11,6 @@ module.exports = {
             { text: 'API', link: '/api/' },
             { text: 'GitHub', link: 'https://github.com/codenteq/imtihan' },
         ],
-        docsRepo: 'codenteq/imtihan-src',
-        editLinks: true,
-        editLinkText: 'Help us improve this page on Github.',
-        logo: 'https://codenteq.com/wp-content/uploads/2022/11/cropped-favicon-270x270.webp',
         sidebar: [
             '/introduction/',
             '/requirements/',
@@ -26,6 +22,10 @@ module.exports = {
             '/testing/',
             '/api/'
         ],
+        docsRepo: 'codenteq/imtihan-src',
+        editLinks: true,
+        editLinkText: 'Help us improve this page on Github.',
+        logo: 'https://codenteq.com/wp-content/uploads/2022/11/cropped-favicon-270x270.webp',
         sidebarDepth: 2,
         lastUpdated: 'Last Updated',
     }

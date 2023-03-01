@@ -44,8 +44,7 @@
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src",
-    "serve": "vuepress serve src",
-    "deploy": "gh-pages -d src/.vuepress/dist"
+    "docs:build": "vuepress build docs"
   },
   "engines": {
     "node": ">=12.0.0"
