@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/imtihan-docs/',
     title: 'İmtihan Documentation',
     description: 'The official documentation for İmtihan',
     head: [
