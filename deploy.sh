@@ -9,7 +9,7 @@ npm run build
 # navigate into the build output directory
 cd docs/.vuepress/dist
 
-echo 'codenteq.github.com' > CNAME
+echo 'codenteq.github.io' > CNAME
 
 git init
 git add -A
