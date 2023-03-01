@@ -1,5 +1,5 @@
 module.exports = {
-    base: '/imtihan-docs/',
+    base: '/imtihan-src/',
     title: 'İmtihan Documentation',
     description: 'The official documentation for İmtihan',
     head: [
@@ -11,7 +11,7 @@ module.exports = {
             { text: 'API', link: '/api/' },
             { text: 'GitHub', link: 'https://github.com/codenteq/imtihan' },
         ],
-        docsRepo: 'codenteq/imtihan-docs',
+        docsRepo: 'codenteq/imtihan-src',
         editLinks: true,
         editLinkText: 'Help us improve this page on Github.',
         logo: 'https://codenteq.com/wp-content/uploads/2022/11/cropped-favicon-270x270.webp',
