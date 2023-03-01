@@ -5,6 +5,9 @@ module.exports = {
     head: [
         ['link', { rel: "icon", type: "image/png", href: "https://codenteq.com/wp-content/uploads/2022/11/cropped-favicon-270x270.webp"}],
     ],
+    plugins: [['vuepress-plugin-code-copy', true]
+
+    ],
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
