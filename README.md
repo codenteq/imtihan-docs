@@ -2,6 +2,11 @@
 The official documentation for İmtihan e-exam application
 
 ## Build
-```bash
-yarn install && yarn dev
+```sh
+yarn && yarn docs:dev
+```
+
+Use the `docs:dev` command to get the build.
+```sh
+yarn docs:build
 ```
