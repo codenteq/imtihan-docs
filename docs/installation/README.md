@@ -49,10 +49,6 @@ Go to `https://localhost:8000`
 ## Front-End Install
 
 ```sh
-composer create-project codenteq/imtihan
-```
-
-```sh
 cd frontend && yarn install && yarn dev
 ```
 

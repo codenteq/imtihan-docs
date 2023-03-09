@@ -12,6 +12,7 @@ module.exports = {
         nav: [
             { text: 'Home', link: '/' },
             { text: 'API', link: '/api/' },
+            { text: 'Sponsor', link: 'https://github.com/sponsors/codenteq'},
             { text: 'Homepage', link: 'https://codenteq.com' },
             { text: 'License', link: 'https://github.com/codenteq/imtihan/blob/master/LICENSE' },
             { text: 'GitHub', link: 'https://github.com/codenteq/imtihan' },
