@@ -1,0 +1,30 @@
+{
+  "index": "Introduction",
+  "requirements": "Requirements",
+  "installation": "Installation",
+  "upgrade": "Upgrade",
+  "docker": "Docker",
+  "database": "Database",
+  "packages": "Packages",
+  "advanced-topics": "Advanced Topics",
+  "testing": "Testing",
+  "restful-api": "RESTful API",
+  "homepage": {
+    "title": "Homepage ↗",
+    "type": "page",
+    "href": "https://codenteq.com",
+    "newWindow": true
+  },
+  "sponsors": {
+    "title": "Sponsor ↗",
+    "type": "page",
+    "href": "https://github.com/sponsors/codenteq",
+    "newWindow": true
+  },
+  "license": {
+    "title": "License ↗",
+    "type": "page",
+    "href": "https://github.com/codenteq/imtihan/blob/master/LICENSE",
+    "newWindow": true
+  }
+}

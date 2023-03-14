@@ -1,57 +1,21 @@
 {
   "name": "imtihan-docs",
-  "description": "The official documentation for İmtihan",
-  "keywords": [
-    "codenteq",
-    "imtihan",
-    "e-exam",
-    "developer",
-    "documentation"
-  ],
-  "homepage": "https://codenteq.com",
-  "authors": [
-    {
-      "name": "Ahmet Sefa Arşiv",
-      "email": "ahmetarsivpm@gmail.com",
-      "homepage": "https://github.com/ahmetarsiv",
-      "role": "Developer"
-    },
-    {
-      "name": "Ali Karabay",
-      "email": "alikarabay77@gmail.com",
-      "homepage": "https://github.com/karabayyazilim",
-      "role": "Developer"
-    }
-  ],
-  "support": {
-    "source": "https://github.com/codenteq/imtihan",
-    "issues": "https://github.com/codenteq/imtihan/issues",
-    "wiki": "https://github.com/codenteq/imtihan/wiki",
-    "email": "info@codenteq.com"
-  },
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/codenteq"
-    },
-    {
-      "type": "open_collective",
-      "url": "https://opencollective.com/codenteq"
-    }
-  ],
-  "license": "MIT",
   "private": true,
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
-  },
-  "engines": {
-    "node": ">=12.0.0"
-  },
-  "devDependencies": {
-    "vuepress": "1.9.7"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
   },
   "dependencies": {
-    "vuepress-plugin-code-copy": "^1.0.6"
+    "next": "^13.2.4",
+    "nextra": "^2.2.19",
+    "nextra-theme-docs": "^2.2.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.15.3",
+    "typescript": "4.9.5"
   }
 }

@@ -1,0 +1,81 @@
+import { Callout } from 'nextra-theme-docs'
+
+# Installation
+
+## Back-End Install
+```sh copy
+composer create-project codenteq/imtihan
+```
+
+```sh copy
+cd backend && composer install && yarn install
+```
+
+```sh copy
+cp .env.example .env
+```
+
+<Callout type="warning">
+  It will check existence of the .env file, if it exists then please update the file manually with the below details.
+</Callout>
+
+```bash copy
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=imtihan
+    DB_USERNAME=root
+    DB_PASSWORD=
+```
+
+<Callout type="warning">
+  It will check existence of the .env file, if it exists then please update the file manually with the below details.
+</Callout>
+
+```sh copy
+php artisan migrate --seed
+```
+### Start Using Imtihan
+### On a production server
+* Open your domain on the browser. For example:
+* `http://example.com`
+
+### On your local device
+```sh copy
+php artisan serve or sail up
+```
+
+### How to log in to your domain as an portal
+Go to `https://localhost:8000`
+
+## Front-End Install
+
+```sh copy
+cd frontend && yarn install && yarn dev
+```
+
+```sh copy
+cp .env.example .env
+```
+
+### Configuration
+
+<Callout type="warning">
+  If the .env file does not exists then it will ask to provide the details on command prompts.
+</Callout>
+
+```bash copy
+    NEXT_PUBLIC_BACKEND_URL=http://localhost:8000
+    NEXT_PUBLIC_IMAGE_URL=http://localhost:9000
+```
+
+### Start Using Imtihan
+
+### On a production server
+* Open your domain on the browser. For example:
+* `http://example.com`
+* `http://example.com/login`
+
+<Callout type="warning">
+  If you used the `--seed` command in the back-end, you've created an automatic user! The user's password is set to `password`!
+</Callout>
